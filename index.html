@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ckb" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="MURAD SOLO CHALLENGE — تاقیکردنەوەی ١٥ پرسیاری زۆر قورس">
+  <title>MURAD SOLO CHALLENGE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="ambient a1"></div><div class="ambient a2"></div>
+  <header class="topbar">
+    <div class="brand"><span class="crown">♛</span><div><b>MURAD</b><small>SOLO CHALLENGE</small></div></div>
+    <button id="soundBtn" class="sound-btn" aria-label="دەنگ">♫ <span>دەنگ چالاکە</span></button>
+  </header>
+
+  <main class="shell">
+    <section id="intro" class="screen intro-screen">
+      <div class="eyebrow"><span class="pulse"></span> تاقیکردنەوەی تایبەتی • تەنها بۆ تۆ</div>
+      <h1>ئایا ئامادەی<br><em>تەحەدای مێشک</em>یت؟</h1>
+      <p class="lead">١٥ پرسیاری زۆر قورس. هەر پرسیارێک تەنها ٦ چرکە. کاتت بە وردی هەژمار دەکرێت.</p>
+      <div class="feature-grid">
+        <div class="feature"><strong>١٥</strong><span>پرسیار</span></div>
+        <div class="feature"><strong>٠٦</strong><span>چرکە بۆ هەر پرسیار</span></div>
+        <div class="feature"><strong>∞</strong><span>هەوڵی خۆت</span></div>
+      </div>
+      <div class="rules">
+        <div>✦ پرسیارەکان لە ئایین، وەرزش، مێژوو، زانست و جیهانن.</div>
+        <div>✦ ئەگەر ٦ چرکە تەواو بوو، وەڵامەکە هەڵە دادەنرێت.</div>
+        <div>✦ لە کۆتاییدا کۆی کات بە چرکە پیشان دەدرێت.</div>
+      </div>
+      <button id="startBtn" class="primary-btn">دەستپێکردنی تەحەدا <span>←</span></button>
+      <div class="micro">باشترە دەنگی مۆبایل یان لاپتۆپت چالاک بێت</div>
+    </section>
+
+    <section id="quiz" class="screen quiz-screen hidden">
+      <div class="quiz-head">
+        <div class="counter"><small>پرسیاری</small><b id="qNumber">١ / ١٥</b></div>
+        <div class="elapsed"><small>کاتی گشتی</small><b id="elapsed">٠٠:٠٠</b></div>
+        <div class="sound-state">♬ <span>مۆزیک</span></div>
+      </div>
+      <div class="progress"><div id="progressFill"></div></div>
+      <div class="timer-wrap">
+        <div class="timer-ring" id="timerRing"><div><b id="seconds">٦</b><small>چرکە</small></div></div>
+        <div class="timer-caption">ماوەی وەڵامدانەوە</div>
+      </div>
+      <div class="question-card">
+        <div class="category" id="category">ئایینی</div>
+        <h2 id="questionText">پرسیار لێرە دەردەکەوێت</h2>
+        <div id="options" class="options"></div>
+      </div>
+      <div id="feedback" class="feedback hidden"></div>
+      <div class="quiz-foot"><span>♛ MURAD SOLO</span><span>کاتی هەر پرسیار: ٦ چرکە</span></div>
+    </section>
+
+    <section id="result" class="screen result-screen hidden">
+      <div class="result-crown">♛</div>
+      <div class="eyebrow">تەحەدا تەواو بوو</div>
+      <h1 id="resultTitle">ئەنجامی یارییەکەت</h1>
+      <div class="score-orb"><strong id="score">٠٠</strong><span>لە ١٥</span></div>
+      <div class="total-time"><small>کۆی گشتی کاتی تەواوکردن</small><strong id="totalTime">٠ چرکە</strong><span id="timeExact">٠.٠٠ چرکە</span></div>
+      <div class="result-stats">
+        <div><b id="correctCount">٠</b><span>دروست</span></div>
+        <div><b id="wrongCount">٠</b><span>هەڵە</span></div>
+        <div><b id="accuracy">٠٪</b><span>ڕێژەی دروستی</span></div>
+      </div>
+      <p id="resultMessage" class="result-message"></p>
+      <button id="againBtn" class="primary-btn">دووبارە یاری بکە <span>↻</span></button>
+      <div class="micro">ئەم ئەنجامە بۆ ئەم دانیشتنە تۆمار کراوە</div>
+    </section>
+  </main>
+  <footer>دروستکراوە بۆ <b>MURAD</b> <span>•</span> ٢٠٢٦</footer>
+  <script src="/static/app.js"></script>
+</body>
+</html>
